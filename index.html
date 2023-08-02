@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="retro-neon-bg">
+        <h1>Administrador de Tareas</h1>
+    </header>
+    <main class="main-container">
+        <section class="section-container">
+            <div class="task-form">
+                <div class="form-row">
+                    <label for="task-name">Tarea:</label>
+                    <input type="text" id="task-name" placeholder="Titulo">
+                </div>
+                <div class="form-row">
+                    <label for="task-comment">Especificaciones:</label>
+                    <textarea type="textarea" id="task-comment" placeholder="Escribe aqui..."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="assigned-to">Asignada a:</label>
+                    <input type="text" id="assigned-to" placeholder="Nombre">
+                </div>
+                <div class="form-row">
+                    <label for="due-date">Fecha limite:</label>
+                    <input type="date" id="due-date">
+                </div>
+                <div class="form-row">
+                    <label for="priority">Nivel de prioridad:</label>
+                    <select id="priority">
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </div>
+                <button id="add-task-btn">Agregar Tarea</button>
+            </div>
+
+            <div class="task-info">
+                <h2>Informacion:</h2>
+                <ul>
+                    <li>Completa el formulario para crear una nueva tarea.</li><br>
+                    <li>Las tareas se ordenarán automáticamente por fecha y prioridad.</li><br>
+                    <ul class="ul-align">
+                        <li>Rojo: Prioridad alta.</li>
+                        <li>Naranja: Prioridad media.</li>
+                        <li>Celeste: Prioridad baja.</li>
+                    </ul><br>
+                    <li>Puedes completar una tarea haciendo clic en el botón "Completar".</li><br>
+                    <li>Si necesitas eliminar una tarea, simplemente haz clic en el botón "Eliminar".</li><br>
+                </ul>
+            </div>
+        </section>
+        <h3 class="sub-titulo">Tareas</h3>
+        <ul class="task-list" id="task-list">
+            <!-- Aca se iran agregando las tareas -->
+        </ul>
+
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

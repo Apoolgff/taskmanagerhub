@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .retro-neon-bg {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000;
+  }
+  
+  .retro-neon-bg h1 {
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    position: relative;
+    animation: neon-glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon-glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    }
+    to {
+      text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000;
+    }
+  }
+
+  @keyframes neon-glow-box {
+    0% {
+      box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+    }
+    50% {
+      box-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    }
+    100% {
+      box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+    }
+  }
+
+  @keyframes neon-glow-box-low {
+    0% {
+      box-shadow: 0 0 5px #36aeda, 0 0 20px #36aeda, 0 0 30px #36aeda;
+    }
+    50% {
+      box-shadow: 0 0 20px #36aeda, 0 0 30px #36aeda, 0 0 40px #36aeda;
+    }
+    100% {
+      box-shadow: 0 0 5px #36aeda, 0 0 20px #36aeda, 0 0 30px #36aeda;
+    }
+  }
+
+  @keyframes neon-glow-box-medium {
+    0% {
+      box-shadow: 0 0 5px #ee9919, 0 0 20px #ee9919, 0 0 30px #ee9919;
+    }
+    50% {
+      box-shadow: 0 0 20px #ee9919, 0 0 30px #ee9919, 0 0 40px #ee9919;
+    }
+    100% {
+      box-shadow: 0 0 5px #ee9919, 0 0 20px #ee9919, 0 0 30px #ee9919;
+    }
+  }
+
+  @keyframes neon-glow-box-high {
+    0% {
+      box-shadow: 0 0 5px #da1d0f, 0 0 20px #da1d0f, 0 0 30px #da1d0f;
+    }
+    50% {
+      box-shadow: 0 0 20px #da1d0f, 0 0 30px #da1d0f, 0 0 40px #da1d0f;
+    }
+    100% {
+      box-shadow: 0 0 5px #da1d0f, 0 0 20px #da1d0f, 0 0 30px #da1d0f;
+    }
+  }
+
+  @keyframes neon-glow-box-complete {
+    0% {
+      box-shadow: 0 0 5px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
+    }
+    50% {
+      box-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50, 0 0 40px #4caf50;
+    }
+    100% {
+      box-shadow: 0 0 5px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
+    }
+  }
+  
+  main {
+    padding: 2rem;
+  }
+
+  .main-container {
+    display: block;
+  }
+  .section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .sub-titulo {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    animation: neon-glow 1s ease-in-out infinite alternate;
+  }
+  
+  .task-form {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 1rem;
+    background-color: #525252;
+    border: 2px solid #ff0000;
+    text-align: center;
+    position: relative;
+    align-content: left;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-row label {
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 1rem;
+    align-self: self-start;
+  }
+  
+  .form-row input,
+  .form-row select,
+  .form-row textarea,
+  .task-form button {
+    flex: 2;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff0000;
+    outline: none;
+  }
+  
+  .form-row textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .task-form button {
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .task-form button:hover {
+    background-color: #ff5555;
+  }
+  
+  .task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .task-info {
+    background-color: #525252;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ul-align {
+    margin-left: 20px;
+  }
+  
+  .task-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .task-info p {
+    margin-bottom: 10px;
+  }
+  
+  .task {
+    background-color: #222;
+    border: 1px solid #444;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .task-li {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    animation: neon-glow-box 1s ease-in-out infinite alternate;
+  }
+
+  .task-button button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 15px auto;
+    display: block;
+    width: 100px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  .task-button button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+  }
+
+  .task.low-priority {
+    background-color: #36aeda; /* Celeste para baja prioridad */
+    animation: neon-glow-box-low 1s ease-in-out infinite alternate;
+  }
+
+  .task.medium-priority {
+    background-color: #ee9919; /* Naranja para prioridad media */
+    animation: neon-glow-box-medium 1s ease-in-out infinite alternate;
+  }
+  
+  .task.high-priority {
+    background-color: #da1d0f; /* Rojo para alta prioridad */
+    animation: neon-glow-box-high 1s ease-in-out infinite alternate;
+  }
+  
+  .task.completed {
+    background-color: #4caf50; /* Verde para tareas completadas */
+    animation: neon-glow-box-complete 1s ease-in-out infinite alternate;
+  }
+
+  .task h3,
+  .task p {
+    color: #000;
+    margin: 3px;
+    overflow-wrap: break-word;
+    max-width: 800px;
+    width: 100%;
+  } 
+
+  .task span {
+    font-weight: bold;
+  }
+
+ /* Estilos para pantallas de tamaño pequeño (móviles) */
+@media (max-width: 600px) {
+  .main-container {
+    display: block;
+    padding: 1rem; /* Ajustar el espaciado del contenido */
+  }
+
+  .retro-neon-bg h1 {
+    font-size: 15px;
+  }
+
+  .form-row label {
+    flex: 1;
+    font-size: 12px;
+    text-align: left;
+    margin-right: 0.5rem;
+  }
+  
+  .form-row input,
+  .form-row select,
+  .form-row textarea,
+  .task-form button {
+    flex: 2;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    max-width: 60%;
+    box-sizing: border-box;
+  }
+
+  .task-button button {
+    padding: 0.3rem 0.7rem;
+  }
+
+  .section-container {
+    display: block; /* Mostrar los elementos en bloque */
+    margin-bottom: 1rem; /* Ajustar el espaciado entre secciones */
+  }
+
+  .task-form {
+    width: 100%; /* Ajustar el ancho del formulario para ocupar todo el espacio disponible */
+  }
+
+  .task-info {
+    width: 100%; /* Ajustar el ancho de la información de tareas para ocupar todo el espacio disponible */
+  }
+
+  .task {
+    display: block; /* Mostrar las tareas en bloque */
+    margin-bottom: 1rem; /* Ajustar el espaciado entre tareas */
+  }
+
+  .task-button {
+    display: flex;
+    flex-direction: column; /* Mostrar los botones en una columna */
+    align-items: center; /* Centrar los botones horizontalmente */
+    margin-top: 10px; /* Ajustar el espaciado entre tareas y botones */
+  }
+}
+
+
+/* Estilos para pantallas de tamaño mediano (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    padding: 2rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-row label {
+    flex: 1;
+    font-size: 16px;
+    text-align: left;
+    margin-right: 0.5rem;
+  }
+  
+  .form-row input,
+  .form-row select,
+  .form-row textarea,
+  .task-form button {
+    flex: 2;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .task-button button {
+    padding: 0.3rem 0.7rem;
+  }
+
+  .task-info {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 40%;
+  }
+
+  .task-list {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* Estilos para pantallas de tamaño grande (escritorio) */
