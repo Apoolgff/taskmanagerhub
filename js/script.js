@@ -31,7 +31,7 @@ function addTask() {
     tasks.push(task);
 
     //Ordenar por fecha y prioridad
-    tasks.sort((a, b) => {
+    /*tasks.sort((a, b) => {
       const dateComparison = new Date(a.dueDate) - new Date(b.dueDate);
       if (dateComparison === 0) {
         const priorityOrder = { Alta: 1, Media: 2, Baja: 3 };
@@ -39,11 +39,35 @@ function addTask() {
       } else {
         return dateComparison;
       }
+    });*/
+    tasks.sort((a, b) => {
+      const dateComparison = new Date(a.dueDate) - new Date(b.dueDate);
+      const priorityOrder = { Alta: 1, Media: 2, Baja: 3 };
+      
+      // Utilizar operador ternario para determinar el orden
+      return dateComparison === 0
+        ? priorityOrder[a.priority] - priorityOrder[b.priority]
+        : dateComparison;
     });
-  
+    
     saveTasksToLocalStorage();
     renderTasks();
     clearFormFields();
+    Swal.fire({
+      icon: 'success',
+      title: 'Tarea agregada con éxito!',
+      background: '#444',
+      color: '#fff'
+    })
+  }
+  else{
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'No puedes dejar el formulario incompleto',
+      background: '#444',
+      color: '#fff'
+    })
   }
 }
 
@@ -91,13 +115,35 @@ function deleteTask(index) {
   tasks.splice(index, 1);
   saveTasksToLocalStorage();
   renderTasks();
+  Swal.fire({
+    icon: 'error',
+    title: 'Tarea Eliminada!',
+    background: '#444',
+    color: '#fff'
+  })
 }
 
 // Funcion para marcar una tarea como completa
-function completeTask(index) {
+/*function completeTask(index) {
   tasks[index].completed = true;
   saveTasksToLocalStorage();
   renderTasks();
+}*/
+
+function completeTask(index) {
+  tasks = [
+    ...tasks.slice(0, index),
+    { ...tasks[index], completed: true },
+    ...tasks.slice(index + 1)
+  ];
+  saveTasksToLocalStorage();
+  renderTasks();
+  Swal.fire({
+    icon: 'success',
+    title: 'Tarea Completada!',
+    background: '#444',
+    color: '#fff'
+  })
 }
 
 // Funcion para guardar las tareas en el local storage
