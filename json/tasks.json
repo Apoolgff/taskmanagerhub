@@ -1,0 +1,366 @@
+{
+    "actividades": [
+      {
+        "id": 1,
+        "nombre": "Leer un libro durante 30 minutos",
+        "tipo": "lectura",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 2,
+        "nombre": "Cocinar una nueva receta",
+        "tipo": "culinaria",
+        "dificultad": "media"
+      },
+      {
+        "id": 3,
+        "nombre": "Salir a caminar por el parque",
+        "tipo": "actividad física",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 4,
+        "nombre": "Aprender una palabra nueva en otro idioma",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 5,
+        "nombre": "Escribir en un diario personal",
+        "tipo": "creatividad",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 6,
+        "nombre": "Hacer un dibujo rápido",
+        "tipo": "creatividad",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 7,
+        "nombre": "Investigar sobre un tema de interés",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 8,
+        "nombre": "Hacer ejercicio de estiramientos",
+        "tipo": "actividad física",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 9,
+        "nombre": "Preparar una ensalada fresca",
+        "tipo": "culinaria",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 10,
+        "nombre": "Escribir un poema corto",
+        "tipo": "creatividad",
+        "dificultad": "media"
+      },
+      {
+        "id": 11,
+        "nombre": "Bailar tu canción favorita",
+        "tipo": "actividad física",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 12,
+        "nombre": "Hacer una lista de metas a corto plazo",
+        "tipo": "auto-mejora",
+        "dificultad": "media"
+      },
+      {
+        "id": 13,
+        "nombre": "Explorar un nuevo género musical",
+        "tipo": "entretenimiento",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 14,
+        "nombre": "Resolver un rompecabezas o acertijo",
+        "tipo": "entretenimiento",
+        "dificultad": "media"
+      },
+      {
+        "id": 15,
+        "nombre": "Tomar fotografías de la naturaleza",
+        "tipo": "creatividad",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 16,
+        "nombre": "Investigar sobre la historia de un lugar",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 17,
+        "nombre": "Practicar meditación durante 10 minutos",
+        "tipo": "auto-cuidado",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 18,
+        "nombre": "Hacer una llamada a un ser querido",
+        "tipo": "conexión social",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 19,
+        "nombre": "Crear una lista de reproducción de música relajante",
+        "tipo": "auto-cuidado",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 20,
+        "nombre": "Escribir un cuento corto",
+        "tipo": "creatividad",
+        "dificultad": "media"
+      },
+      {
+        "id": 21,
+        "nombre": "Hacer una caminata por la naturaleza",
+        "tipo": "actividad física",
+        "dificultad": "media"
+      },
+      {
+        "id": 22,
+        "nombre": "Investigar sobre constelaciones y estrellas",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 23,
+        "nombre": "Hacer una lista de cosas que te hacen feliz",
+        "tipo": "auto-mejora",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 24,
+        "nombre": "Practicar yoga durante 20 minutos",
+        "tipo": "actividad física",
+        "dificultad": "media"
+      },
+      {
+        "id": 25,
+        "nombre": "Aprender a preparar un cóctel",
+        "tipo": "culinaria",
+        "dificultad": "media"
+      },
+      {
+        "id": 26,
+        "nombre": "Hacer una lista de lugares que quieres visitar",
+        "tipo": "auto-mejora",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 27,
+        "nombre": "Crear una manualidad con materiales reciclados",
+        "tipo": "creatividad",
+        "dificultad": "media"
+      },
+      {
+        "id": 28,
+        "nombre": "Practicar ejercicios de respiración profunda",
+        "tipo": "auto-cuidado",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 29,
+        "nombre": "Realizar una sesión de escritura libre por 15 minutos",
+        "tipo": "creatividad",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 30,
+        "nombre": "Investigar sobre un tema de historia local",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 31,
+        "nombre": "Hacer una lista de reproducción de canciones motivadoras",
+        "tipo": "auto-mejora",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 32,
+        "nombre": "Practicar técnicas de relajación",
+        "tipo": "auto-cuidado",
+        "dificultad": "media"
+      },
+      {
+        "id": 33,
+        "nombre": "Hacer una videollamada con un amigo",
+        "tipo": "conexión social",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 34,
+        "nombre": "Crear una lista de libros que quieres leer",
+        "tipo": "auto-mejora",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 35,
+        "nombre": "Explorar una nueva ruta en bicicleta",
+        "tipo": "actividad física",
+        "dificultad": "media"
+      },
+      {
+        "id": 36,
+        "nombre": "Hacer una lista de gratitudes",
+        "tipo": "auto-cuidado",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 37,
+        "nombre": "Experimentar con una receta de postre",
+        "tipo": "culinaria",
+        "dificultad": "media"
+      },
+      {
+        "id": 38,
+        "nombre": "Realizar una búsqueda del tesoro en casa",
+        "tipo": "entretenimiento",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 39,
+        "nombre": "Aprender a tocar una canción en instrumento musical",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 40,
+        "nombre": "Explorar una nueva serie o película",
+        "tipo": "entretenimiento",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 41,
+        "nombre": "Hacer un álbum de recortes digital",
+        "tipo": "creatividad",
+        "dificultad": "media"
+      },
+      {
+        "id": 42,
+        "nombre": "Realizar una sesión de ejercicios de cardio",
+        "tipo": "actividad física",
+        "dificultad": "media"
+      },
+      {
+        "id": 43,
+        "nombre": "Investigar sobre una cultura extranjera",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 44,
+        "nombre": "Practicar técnicas de relajación",
+        "tipo": "auto-cuidado",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 45,
+        "nombre": "Crear una lista de deseos para el futuro",
+        "tipo": "auto-mejora",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 46,
+        "nombre": "Hacer una sesión de estiramientos y yoga",
+        "tipo": "actividad física",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 47,
+        "nombre": "Explorar una nueva ruta de senderismo",
+        "tipo": "actividad física",
+        "dificultad": "media"
+      },
+      {
+        "id": 48,
+        "nombre": "Experimentar con una nueva receta vegana",
+        "tipo": "culinaria",
+        "dificultad": "media"
+      },
+      {
+        "id": 49,
+        "nombre": "Practicar la técnica de mindfulness",
+        "tipo": "auto-cuidado",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 50,
+        "nombre": "Investigar sobre un tema de ciencia",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 51,
+        "nombre": "Hacer un dibujo detallado",
+        "tipo": "creatividad",
+        "dificultad": "media"
+      },
+      {
+        "id": 52,
+        "nombre": "Escribir una carta a un ser querido",
+        "tipo": "conexión social",
+        "dificultad": "fácil"
+      },
+      {
+        "id": 53,
+        "nombre": "Realizar una rutina de ejercicios intensos",
+        "tipo": "actividad física",
+        "dificultad": "difícil"
+      },
+      {
+        "id": 54,
+        "nombre": "Investigar sobre un tema de filosofía",
+        "tipo": "aprendizaje",
+        "dificultad": "media"
+      },
+      {
+        "id": 55,
+        "nombre": "Intentar una receta culinaria complicada",
+        "tipo": "culinaria",
+        "dificultad": "difícil"
+      },
+      {
+        "id": 56,
+        "nombre": "Escribir un poema complejo",
+        "tipo": "creatividad",
+        "dificultad": "difícil"
+      },
+      {
+        "id": 57,
+        "nombre": "Practicar técnicas avanzadas de meditación",
+        "tipo": "auto-cuidado",
+        "dificultad": "difícil"
+      },
+      {
+        "id": 58,
+        "nombre": "Realizar un proyecto de arte en gran escala",
+        "tipo": "creatividad",
+        "dificultad": "difícil"
+      },
+      {
+        "id": 59,
+        "nombre": "Aprender a tocar una canción complicada en instrumento musical",
+        "tipo": "aprendizaje",
+        "dificultad": "difícil"
+      },
+      {
+        "id": 60,
+        "nombre": "Realizar una actividad de voluntariado en tu comunidad",
+        "tipo": "contribución social",
+        "dificultad": "media"
+      }
+    ]
+  }
+  
+  
