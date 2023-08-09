@@ -1,5 +1,5 @@
-const btnObtenerActividad = document.getElementById('btn-Random-Activity');
-const actividadContainer = document.getElementById('activity-Container');
+const btnObtenerActividad = document.getElementById('btn-random-activity');
+const actividadContainer = document.getElementById('activity-container');
 
 btnObtenerActividad.addEventListener('click', () => {
     fetch('./json/tasks.json')
