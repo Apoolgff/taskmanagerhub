@@ -1,4 +1,3 @@
-//Clase Task
 class Task {
   constructor(name, taskComment, assignedTo, dueDate, priority) {
     this.name = name;
@@ -10,10 +9,8 @@ class Task {
   }
 }
 
-// Array de tareas
 let tasks = [];
 
-// DOM 
 const taskList = document.getElementById("task-list");
 const addTaskBtn = document.getElementById("add-task-btn");
 
@@ -30,21 +27,10 @@ function addTask() {
     
     tasks.push(task);
 
-    //Ordenar por fecha y prioridad
-    /*tasks.sort((a, b) => {
-      const dateComparison = new Date(a.dueDate) - new Date(b.dueDate);
-      if (dateComparison === 0) {
-        const priorityOrder = { Alta: 1, Media: 2, Baja: 3 };
-        return priorityOrder[a.priority] - priorityOrder[b.priority];
-      } else {
-        return dateComparison;
-      }
-    });*/
     tasks.sort((a, b) => {
       const dateComparison = new Date(a.dueDate) - new Date(b.dueDate);
       const priorityOrder = { Alta: 1, Media: 2, Baja: 3 };
       
-      // Utilizar operador ternario para determinar el orden
       return dateComparison === 0
         ? priorityOrder[a.priority] - priorityOrder[b.priority]
         : dateComparison;
@@ -123,13 +109,7 @@ function deleteTask(index) {
   })
 }
 
-// Funcion para marcar una tarea como completa
-/*function completeTask(index) {
-  tasks[index].completed = true;
-  saveTasksToLocalStorage();
-  renderTasks();
-}*/
-
+//Funcion para completar una tarea
 function completeTask(index) {
   tasks = [
     ...tasks.slice(0, index),

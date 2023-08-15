@@ -120,7 +120,7 @@ body {
     background-color: #525252;
     border: 2px solid #ff0000;
     padding: 10px;
-    max-width: 50%;
+    width: 50%;
     margin: 10px auto;
     justify-self: center;
   }
@@ -151,15 +151,15 @@ body {
   }
 
   .easy {
-    color: #36aeda; /* Celeste para baja prioridad */
+    color: #36aeda;
   }
 
   .medium {
-    color: #ee9919; /* Naranja para prioridad media */
+    color: #ee9919;
   }
   
   .hard {
-    color: #da1d0f; /* Rojo para alta prioridad */
+    color: #da1d0f;
   }
   
   
@@ -284,22 +284,22 @@ body {
   }
 
   .task.low-priority {
-    background-color: #36aeda; /* Celeste para baja prioridad */
+    background-color: #36aeda;
     animation: neon-glow-box-low 1s ease-in-out infinite alternate;
   }
 
   .task.medium-priority {
-    background-color: #ee9919; /* Naranja para prioridad media */
+    background-color: #ee9919;
     animation: neon-glow-box-medium 1s ease-in-out infinite alternate;
   }
   
   .task.high-priority {
-    background-color: #da1d0f; /* Rojo para alta prioridad */
+    background-color: #da1d0f;
     animation: neon-glow-box-high 1s ease-in-out infinite alternate;
   }
   
   .task.completed {
-    background-color: #4caf50; /* Verde para tareas completadas */
+    background-color: #4caf50;
     animation: neon-glow-box-complete 1s ease-in-out infinite alternate;
   }
 
@@ -320,11 +320,23 @@ body {
     font-weight: bold;
   }
 
- /* Estilos para pantallas de tamaño pequeño (móviles) */
+ /*pantallas chicas*/
 @media (max-width: 600px) {
   .main-container {
     display: block;
-    padding: 1rem; /* Ajustar el espaciado del contenido */
+    padding: 1rem;
+  }
+
+  .random-div {
+    width: 100%;
+  }
+
+  .random-div button {
+    width: 50%;
+  }
+
+  .sub-title-h4 {
+    font-size: 15px;
   }
 
   .retro-neon-bg h1 {
@@ -355,33 +367,33 @@ body {
   }
 
   .section-container {
-    display: block; /* Mostrar los elementos en bloque */
-    margin-bottom: 1rem; /* Ajustar el espaciado entre secciones */
+    display: block;
+    margin-bottom: 1rem;
   }
 
   .task-form {
-    width: 100%; /* Ajustar el ancho del formulario para ocupar todo el espacio disponible */
+    width: 100%;
   }
 
   .task-info {
-    width: 100%; /* Ajustar el ancho de la información de tareas para ocupar todo el espacio disponible */
+    width: 100%;
   }
 
   .task {
-    display: block; /* Mostrar las tareas en bloque */
-    margin-bottom: 1rem; /* Ajustar el espaciado entre tareas */
+    display: block;
+    margin-bottom: 1rem;
   }
 
   .task-button {
     display: flex;
-    flex-direction: column; /* Mostrar los botones en una columna */
-    align-items: center; /* Centrar los botones horizontalmente */
-    margin-top: 10px; /* Ajustar el espaciado entre tareas y botones */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
 }
 
 
-/* Estilos para pantallas de tamaño mediano (tabletas) */
+/*pantallas medianas*/
 @media (min-width: 601px) and (max-width: 1024px) {
   .main-container {
     padding: 2rem;
@@ -412,8 +424,8 @@ body {
   }
 
   .task {
-    display: block; /* Mostrar las tareas en bloque */
-    margin-bottom: 1rem; /* Ajustar el espaciado entre tareas */
+    display: block;
+    margin-bottom: 1rem;
   }
 
   .task-button button {
@@ -421,7 +433,7 @@ body {
   }
 
   .task-form {
-    width: 100%; /* Ajustar el ancho del formulario para ocupar todo el espacio disponible */
+    width: 100%;
   }
 
   .task-info {
@@ -435,5 +447,3 @@ body {
     width: 100%;
   }
 }
-
-/* Estilos para pantallas de tamaño grande (escritorio) */
